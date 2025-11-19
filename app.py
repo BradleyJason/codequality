@@ -6,7 +6,7 @@ app = Flask(__name__)
 items = []
 
 def is_valid_item(item: str | None) -> bool:
-    """Return True only if the item is a non-empty, non-whitespace string."""
+    """Return only if the item is a non-empty, non-whitespace string."""
     if item is None:
         return False
     return bool(item.strip())
